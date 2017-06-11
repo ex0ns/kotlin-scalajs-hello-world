@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Kotlin-Scala.js Tutorial</title>
+</head>
+<body>
+    <script type="text/javascript" src="./target/sjs/hello-world.js"></script>
+    <script>
+        // Use the deprecated way of running Scala.js code
+        ((typeof global == "object" && global && global["object"]) === Object ? global : this)["MainKt"]().main();
+    </script>
+</body>
+</html>
